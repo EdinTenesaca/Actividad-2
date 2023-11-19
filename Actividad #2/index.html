@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <table class="calculator">
+    <tr>
+      <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+
+      <!-- La función clearScreen() borra todos los valores -->
+      <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+    </tr>
+    <tr>
+      <!-- La función display() muestra el valor del botón clickeado -->
+      <td> <input type="button" value="1" onclick="display('1')" /> </td>
+      <td> <input type="button" value="2" onclick="display('2')" /> </td>
+      <td> <input type="button" value="3" onclick="display('3')" /> </td>
+      <td> <input type="button" value="/" onclick="display('/')" /> </td>
+    </tr>
+    <tr>
+      <td> <input type="button" value="4" onclick="display('4')" /> </td>
+      <td> <input type="button" value="5" onclick="display('5')" /> </td>
+      <td> <input type="button" value="6" onclick="display('6')" /> </td>
+      <td> <input type="button" value="-" onclick="display('-')" /> </td>
+    </tr>
+    <tr>
+      <td> <input type="button" value="7" onclick="display('7')" /> </td>
+      <td> <input type="button" value="8" onclick="display('8')" /> </td>
+      <td> <input type="button" value="9" onclick="display('9')" /> </td>
+      <td> <input type="button" value="+" onclick="display('+')" /> </td>
+    </tr>
+    <tr>
+      <td> <input type="button" value="." onclick="display('.')" /> </td>
+      <td> <input type="button" value="0" onclick="display('0')" /> </td>
+
+      <!-- La función calculate() evalúa la expresión matemática -->
+      <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+      <td> <input type="button" value="*" onclick="display('*')" /> </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" src="script.js"></script>
+<div>
+    <iframe src="https://player.vimeo.com/video/402640509?h=d3fa358642" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/402640509">Cut Me - Moses Sumney</a> from <a href="https://vimeo.com/user13648834">Moses Sumney</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</div>
+</body>
+
+</html>
